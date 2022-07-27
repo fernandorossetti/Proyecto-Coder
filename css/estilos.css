@@ -6,7 +6,7 @@
 }
 
 .bg-blue {
-	background-color: #0d6efd;
+	background-color: #292c31;
 }
 
 .color a {
@@ -48,6 +48,7 @@ header {
 header h1 {
 	color: rgb(255, 255, 255);
 	text-align: center;
+	/* margin-right: 150px; */
 }
 
 header nav {
@@ -60,17 +61,17 @@ header nav {
 	padding: 10px;
 }
 
-/* .active:hover {
-	background-color: rgba(0, 128, 64, 0.76) !important;
-	color: white;
-	font-size: larger;
-	text-decoration: underline solid;
-	text-transform: capitalize;
-} */
+.active-in:hover {
+	background-color:#0d6efd !important;
+	color: white !important;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
 
 .lista {
 	display: flex;
 	list-style: none;
+	color: #fff;
 }
 
 header nav ul li a {
@@ -190,7 +191,16 @@ th {
 	list-style: none;
 }
 
+
 /* MEDIAS QUERY */
+
+@media screen and (min-width:995px) {
+	.navbar-collapse {
+		flex-basis: 100%;
+		flex-grow: 1;
+		align-items: center;
+	}
+}
 
 @media screen and (max-width:950px) {
 	.articulos {
