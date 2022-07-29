@@ -48,7 +48,6 @@ header {
 header h1 {
 	color: rgb(255, 255, 255);
 	text-align: center;
-	/* margin-right: 150px; */
 }
 
 header nav {
@@ -111,9 +110,10 @@ header nav ul li a {
 	border: 2px solid rgba(255, 255, 255, 0.151);
 }
 
-.tareas ol li {
+.tareas-centro ul li {
 	text-decoration: solid;
-	margin-bottom: 10px;
+	text-align: center;
+	margin-left: -25px;
 }
 
 .servicio-contenido {
@@ -150,10 +150,12 @@ header nav ul li a {
 	background-color: rgba(0, 0, 0, 0.829);
 	width: 100%;
 	height: 100%;
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
-	/* padding: 10px; */
+	text-align: center;
+}
+
+.row {
+	margin-right: 0 !important;
+    margin-left: 0 !important;
 }
 
 .encabezado-footer {
@@ -162,12 +164,21 @@ header nav ul li a {
 	flex-wrap: wrap;
 }
 
+.encabezado-footer div {
+	background-color: #121314 !important;
+}
+
 .redes {
-	text-align: inherit;
+	text-align: justify;
 }
 
 .derechos {
 	text-align: inherit;
+}
+
+.derechos ul li {
+	text-align: inherit;
+	margin-left: -25px;
 }
 
 .encabezado-footer div ul li {
