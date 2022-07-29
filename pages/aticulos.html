@@ -48,7 +48,7 @@
     <main>
         <section class="encabezado">
             <h2>Nuestras Fotos</h2>
-            <div class="articulos img-fluid rounded mx-auto">
+            <div id="encabezadoArticulos" class="articulos img-fluid rounded mx-auto">
                 <img class="articulos-img" src="../assets/img/img1.jpg" alt="">
                 <img class="articulos-img" src="../assets/img/img5.jpg" alt="">
                 <img class="articulos-img" src="../assets/img/img3.jpg" alt="">
@@ -57,48 +57,78 @@
                 <img class="articulos-img" src="../assets/img/img2.jpg" alt="">
             </div>
         </section>
+        <section>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../assets/img/img1.jpg" class="d-block wh" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/img/img2.jpg" class="d-block wh" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/img/img3.jpg" class="d-block wh" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/img/img4.jpg" class="d-block wh" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/img/img5.jpg" class="d-block wh" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/img/img7.jpg" class="d-block wh" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
     </main>
     <!-- Finaliza Contenido -->
 
     <!-- Inicio del Footer -->
-    <footer class="contenido-footer">
-        <section>
-            <div class="encabezado-footer">
-                <div>
-                    <h2>Contacto</h2>
-                    <ul>
-                        <li><a href="mailto:fernando_r_4@hormail.com">fernando_r_4@hotmail.com</a> </li>
-                        <li>+5493571638017</li>
-                        <li>Rio Tercero-Cordoba-Argentina</li>
-                        <li><button onclick="location.href='contacto.html'">Contacto</button></li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>Terminos</h2>
-                    <p>Servicio fotografico con terminos y condiciones.</p>
-                </div>
-                <div class="redes">
-                    <h2>Redes</h2>
-                    <ul>
-                        <li><a href="https://www.facebook.com/fernando.rossetti.7" target="_blank"><img
-                                    src="../assets/icons/facebook.png" alt="Facebook"></a></li>
-                        <li><a href="https://www.instagram.com/rossetti.fer/" target="_blank"><img
-                                    src="../assets/icons/instagram.png" alt="Instagram"></a></li>
-                        <li> <a href="https://www.linkedin.com/in/fernando-rossetti-9679159b/" target="_blank"><img
-                                    src="../assets/icons/linkedin.png" alt="Linkedin"></a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>Derechos</h2>
-                    <ul>
-                        <li><img src="../assets/icons/copyright.png" target="_blank"></li>
-                        <li>Fernando Rossetti</li>
-                        <li>Copyright 2022</li>
-                    </ul>
-                </div>
+    <footer class="contenido-footer text-center bg-secondary">
+        <div class="row">
+            <div class="col bg-dark bg-gradient">
+                <h2>Contacto</h2>
+                <ul>
+                    <li><a href="mailto:fernando_r_4@hormail.com">fernando_r_4@hotmail.com</a> </li>
+                    <li>+5493571638017</li>
+                    <li>Rio Tercero-Cordoba-Argentina</li>
+                    <li><button onclick="location.href='contacto.html'">Contacto</button></li>
+                </ul>
             </div>
-        </section>
-    </footer>
+            <div class="col bg-dark bg-gradient">
+                <h2>Terminos</h2>
+                <p>Servicio fotografico con terminos y condiciones.</p>
+            </div>
+            <div class="col bg-dark bg-gradient">
+                <h2>Redes</h2>
+                <ul>
+                    <li><a href="https://www.facebook.com/Vitalife-Gym-114486399339287" target="_blank"><img
+                                src="../assets/icons/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/gimnasiosvitalife/" target="_blank"><img
+                                src="../assets/icons/instagram.png" alt="Instagram"></a></li>
+                    <li> <a href="https://www.linkedin.com/in/fernando-rossetti-9679159b/" target="_blank"><img
+                                src="../assets/icons/linkedin.png" alt="Linkedin"></a></li>
+                </ul>
+            </div>
+            <div class="col bg-dark bg-gradient">
+                <h2>Derechos</h2>
+                <ul>
+                    <li><img src="../assets/icons/copyright.png" target="_blank"></li>
+                    <li>Fernando Rossetti</li>
+                    <li>Copyright 2022</li>
+                </ul>
+            </div>
+        </div>
+</footer>
     <!-- Finaliza Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
