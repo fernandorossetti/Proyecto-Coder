@@ -1,4 +1,6 @@
 @import "header";
+@import "clases";
+@import "mediaquery";
 
 h2 {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -10,12 +12,3 @@ h2 {
 	background-color: rgba(0, 0, 0, 0.562);
 	margin-bottom: 10px;
 }
-
-ul {
-	list-style: none;
-}
-
-main {
-	background-color:rgb(120, 112, 112);
-}
-
