@@ -19,9 +19,6 @@ header {
       font-size: 18px;
       margin: 10px; }
 
-.color a {
-  color: white !important; }
-
 .contenido {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 300;
@@ -32,9 +29,6 @@ header {
   color: white !important;
   padding-left: 0.5rem;
   padding-right: 0.5rem; }
-
-.decoration {
-  text-decoration: none; }
 
 .nav {
   --bs-nav-link-padding-x: 0px !important;
@@ -51,33 +45,20 @@ header {
 
 .encabezado {
   text-align: center;
-  /* color: white; */
   box-shadow: 10px 5px 5px black;
   margin-bottom: 1rem; }
-
-.encabezado iframe {
-  width: 90%;
-  height: 450px;
-  border: 2px solid; }
-
-.encabezado p {
-  margin: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.151); }
+  .encabezado iframe {
+    width: 90%;
+    height: 450px;
+    border: 2px solid; }
+  .encabezado p {
+    margin: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.151); }
 
 .tareas-centro ul li {
   text-decoration: solid;
   text-align: center;
   margin-left: -25px; }
-
-.servicio-contenido {
-  text-align: center;
-  color: white;
-  box-shadow: 10px 5px 5px black; }
-
-.ubicacion-contenido {
-  text-align: center;
-  color: white;
-  box-shadow: 10px 5px 5px black; }
 
 .articulos {
   display: grid;
@@ -85,12 +66,11 @@ header {
   grid-auto-rows: auto;
   gap: 15px;
   width: 90%; }
-
-.articulos-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  box-shadow: 10px 10px 21px -9px rgba(0, 0, 0, 0.75); }
+  .articulos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 10px 10px 21px -9px rgba(0, 0, 0, 0.75); }
 
 #carouselExampleControls {
   display: none; }
@@ -118,17 +98,17 @@ header {
     flex-grow: 1;
     align-items: center; } }
 
-@media screen and (min-width: 995px) and (max-width: 950px) {
+@media screen and (max-width: 950px) {
   .articulos {
     grid-template-columns: repeat(2, 1fr); } }
 
-@media screen and (min-width: 995px) and (max-width: 675px) {
+@media screen and (max-width: 675px) {
   header nav {
     flex-direction: column;
     text-align: center;
     height: auto; } }
 
-@media screen and (min-width: 995px) and (max-width: 450px) {
+@media screen and (max-width: 450px) {
   #encabezadoArticulos {
     display: none; }
   #carouselExampleControls {
