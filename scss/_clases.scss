@@ -1,5 +1,5 @@
 // Clases
-@import "variables";
+@import "maps";
 
 .contenido {
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -8,29 +8,27 @@
 }
 
 .active-in:hover {
-	background-color: $succes !important;
-	color: rgb(255, 255, 255) !important;
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
+	background-color: map-get($map:$colors, $key:"succes")!important;
+	color: map-get($map: $colors, $key: "white")!important;
 }
 
 .nav-pills{
-	--bs-nav-pills-link-active-bg: $succes !important;
+	--bs-nav-pills-link-active-bg: map-get($map:$colors, $key:"succes") !important;
 }
 
 .nav {
 	--bs-nav-link-padding-x: 0px !important;
 	--bs-nav-link-padding-y: 0px !important;
-	--bs-nav-link-color: white;
+	--bs-nav-link-color: map-get($map:$colors, $key:"white");
 }
 
 h2 {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	font-weight: 500;
+	font-weight: 300;
 	padding: 10px;
 	text-decoration: underline;
 	text-align: center;
-	color: white;
-	background-color: rgba(0, 0, 0, 0.562);
+	color: map-get($map:$colors, $key:"black");
+	// background-color: map-get($map:$colors, $key:"gray");
 	margin-bottom: 10px;
 }

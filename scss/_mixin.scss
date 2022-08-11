@@ -5,3 +5,13 @@
    gap: $espacio;
    width: 90%; 
 }
+
+@mixin flex ($dis, $content, $aling, $color, $pad) {
+   display: $dis;
+   justify-content: $content;
+   align-items: $aling;
+   width: 100%;
+   height: 100px;
+   background-color: $color;
+   padding: $pad;
+}
