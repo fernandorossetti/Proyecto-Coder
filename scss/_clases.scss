@@ -1,4 +1,5 @@
 // Clases
+@import "variables";
 
 .contenido {
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -7,15 +8,20 @@
 }
 
 .active-in:hover {
-	background-color:#0d6efd !important;
+	background-color: $succes !important;
 	color: rgb(255, 255, 255) !important;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 }
 
+.nav-pills{
+	--bs-nav-pills-link-active-bg: $succes !important;
+}
+
 .nav {
 	--bs-nav-link-padding-x: 0px !important;
 	--bs-nav-link-padding-y: 0px !important;
+	--bs-nav-link-color: white;
 }
 
 h2 {
