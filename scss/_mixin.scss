@@ -1,0 +1,7 @@
+@mixin grid ($columnas, $espacio)  {
+   display: grid;
+   grid-template-columns: repeat($columnas, 1fr);
+   grid-auto-rows: auto;
+   gap: $espacio;
+   width: 90%; 
+}
