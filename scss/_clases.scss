@@ -1,5 +1,6 @@
 // Clases
 @import "maps";
+@import "variables";
 
 .contenido {
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -19,16 +20,20 @@
 .nav {
 	--bs-nav-link-padding-x: 0px !important;
 	--bs-nav-link-padding-y: 0px !important;
-	--bs-nav-link-color: map-get($map:$colors, $key:"white");
+	--bs-nav-link-color: $white !important;
+	color: $white;
 }
 
 h2 {
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 3rem;
+	line-height: 1;
+	font-family: 'Anton';
 	font-weight: 300;
 	padding: 10px;
-	text-decoration: underline;
+	text-decoration: solid;
 	text-align: center;
-	color: map-get($map:$colors, $key:"black");
-	// background-color: map-get($map:$colors, $key:"gray");
+	color: map-get($map:$colors, $key:"succes");
 	margin-bottom: 10px;
 }
+
+
