@@ -7,12 +7,12 @@ header {
 	position: sticky;
 
     h1 {
-        color: map-get($map: $colors, $key: "white");
+        color: map-get($map: $colors, $key: "succes");
         text-align: center;
     }
 
     nav {
-        @include flex (flex, space-between, center, $black, 10px);
+        @include flex (flex, space-between, center, 10px);
 
         ul li a {
             text-decoration: none;
