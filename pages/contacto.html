@@ -22,172 +22,161 @@
     <title>Contacto</title>
 </head>
 
-<body class="contenido">
-    <!-- Lista no Ordenada -->
-    <header class="sticky-top">
-        <nav>
-            <h1><img src="../assets/icons/gym2.png">Gym Vitalife</h1>
-            <ul class="nav-pills nav">
-                <li class="nav-item">
-                    <a class="nav-link active-in" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active-in" href="servicio.html">Servicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active-in" href="aticulos.html">Artículos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active-in" href="ubicacion.html">Ubicación</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active-in" href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Finaliza lista -->
+<body>
+    <div class="contenido">
+        <!-- Lista no Ordenada -->
+        <header class="bg-dark sticky-top">
+            <nav>
+                <h1><img src="../assets/icons/gym2.png">Gym Vitalife</h1>
+                <ul class="nav-pills nav">
+                    <li class="nav-item">
+                        <a class="nav-link active-in" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active-in" href="servicio.html">Servicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active-in" href="articulos.html">Artículos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active-in" href="ubicacion.html">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active-in" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Finaliza lista -->
 
-    <!-- Inicio Formualario -->
-    <main class="contenido-main">
-        <section class="encabezado mb-4">
-            <h2>Formulario de Contacto</h2>
-            <!--Section description-->
-            <p class="text-center w-responsive mx-auto mb-5">
-                Tiene usted alguna pregunta? Por favor, no dude en contactarnos directamente. Nuestro equipo se
-                comunicará contigo para ayudarte..</p>
-            <div class="row">
-                <div class="col-md-9 mb-md-0 mb-5">
-                    <form id="contact-form" class="text-dark" name="contact-form" action="mail.php" method="POST">
-                        <!-- Grid row -->
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="name" name="name" class="form-control">
-                                    <label for="name" class="text-dark">Nombre</label>
+        <!-- Inicio Formualario -->
+        <main class="contenido-main">
+            <section class="encabezado mb-4">
+                <h2>Formulario de Contacto</h2>
+                <!--Section description-->
+                <p class="text-center w-responsive mx-auto mb-5">
+                    Tiene usted alguna pregunta? Por favor, no dude en contactarnos directamente. Nuestro equipo se
+                    comunicará contigo para ayudarte..</p>
+                <div class="row">
+                    <div class="col-md-9 mb-md-0 mb-5">
+                        <form id="contact-form" class="text-darkgray" name="contact-form" action="mail.php" method="POST">
+                            <!-- Grid row -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        <label for="name" class="">Nombre</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="apellido" name="apellido" class="form-control">
+                                        <label for="apellido" class="">Apellido</label>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="apellido" name="apellido" class="form-control">
-                                    <label for="apellido" class="text-dark">Apellido</label>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="direccion" name="direccion" class="form-control">
+                                        <label for="direccion" class="">Direccion</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" placeholder="aaaa@email.com"
+                                            class="form-control">
+                                        <label for="email" class="">Email</label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="direccion" name="direccion" class="form-control">
-                                    <label for="direccion" class="text-dark">Direccion</label>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="number" id="celular" name="celular" placeholder="3571-xxxxxx"
+                                            class="form-control">
+                                        <label for="celular" class="">Celular</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <label for="seleccion" class="text-white">Elije la opción que mas te gusto:
+                                        </label>
+                                        <select name="editor" id="edit">
+                                            <option value="musc">Musculatura</option>
+                                            <option value="crfit">Crossfit</option>
+                                            <option value="crbox">Crossbox</option>
+                                            <option value="pers">Personalizado</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="email" name="email" placeholder="aaaa@email.com"
-                                        class="form-control">
-                                    <label for="email" class="">Email</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="number" id="celular" name="celular" placeholder="3571-xxxxxx"
-                                        class="form-control">
-                                    <label for="celular" class="">Celular</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <label for="seleccion" class="text-white">Elije la opción que mas te gusto: </label>
-                                    <select name="editor" id="edit">
-                                        <option value="musc">Musculatura</option>
-                                        <option value="crfit">Crossfit</option>
-                                        <option value="crbox">Crossbox</option>
-                                        <option value="pers">Personalizado</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Grid row-->
+                            <!--Grid row-->
 
-                        <!--Grid row-->
-                        <div class="row">
-                            <!--Grid column-->
-                            <div class="col-md-12">
-                                <div class="md-form">
-                                    <textarea type="text" id="message" name="message" rows="2"
-                                        class="form-control md-textarea"></textarea>
-                                    <label for="message">Escribe tu Mensaje</label>
+                            <!--Grid row-->
+                            <div class="row">
+                                <!--Grid column-->
+                                <div class="col-md-12">
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2"
+                                            class="form-control md-textarea"></textarea>
+                                        <label for="message">Escribe tu Mensaje</label>
+                                    </div>
                                 </div>
                             </div>
+                            <!--Grid row-->
+                        </form>
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-primary" onclick="alert('Enviado Exitosamente')">Enviar</a>
                         </div>
-                        <!--Grid row-->
-                    </form>
-                    <div class="text-center text-md-left">
-                        <a class="btn btn-primary" onclick="alert('Enviado Exitosamente')">Enviar</a>
+                        <div class="status"></div>
                     </div>
-                    <div class="status"></div>
-                </div>
-                <!--Grid column-->
+                    <!--Grid column-->
 
-                <!--Grid column-->
-                <div class="col-md-3 text-center">
-                    <ul class="list-unstyled mb-0">
-                        <li><img src="../assets/icons/locate.png" alt="Imagen-Localización">
-                            <p>Rio Tercero, CP5850, ARG</p>
-                        </li>
-                        <li><img src="../assets/icons/phone.png" alt="Imagen-Teléfono">
-                            <p>+ 54 9 3571 41-8390</p>
-                        </li>
-                        <li><img src="../assets/icons/mail.png" alt="Imagen-email">
-                            <p>robertow.galliano@gmail.com</p>
-                        </li>
-                    </ul>
+                    <!--Grid column-->
+                    <div class="col-md-3 text-center text-darkgray">
+                        <ul class="list-unstyled mb-0">
+                            <li><img src="../assets/icons/locate.png" alt="Imagen-Localización">
+                                <p>Rio Tercero, CP5850, ARG</p>
+                            </li>
+                            <li><img src="../assets/icons/phone.png" alt="Imagen-Teléfono">
+                                <p>+ 54 9 3571 41-8390</p>
+                            </li>
+                            <li><img src="../assets/icons/mail.png" alt="Imagen-email">
+                                <p>robertow.galliano@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
-    <!-- Finaliza Formualario -->
+            </section>
+        </main>
+        <!-- Finaliza Formualario -->
 
-    <!-- Inicio del Footer -->
-    <footer class="contenido-footer text-center bg-secondary">
-        <div class="row">
-            <div class="col bg-dark bg-gradient">
-                <h2>Contacto</h2>
-                <ul>
-                    <li><a href="mailto:fernando_r_4@hormail.com">fernando_r_4@hotmail.com</a> </li>
-                    <li>(+54) 3571-638017</li>
-                    <li>Rio Tercero-Cordoba-Argentina</li>
-                    <li><button onclick="location.href='contacto.html'">Contacto</button></li>
-                </ul>
-            </div>
-            <div class="col bg-dark bg-gradient">
-                <h2>Terminos</h2>
-                <p>Servicio fotografico con terminos y condiciones.</p>
-            </div>
-            <div class="col bg-dark bg-gradient">
-                <h2>Redes</h2>
-                <ul>
-                    <li><a href="https://www.facebook.com/Vitalife-Gym-114486399339287" target="_blank"><img
-                                src="../assets/icons/facebook.png" alt="Facebook"></a></li>
-                    <li><a href="https://www.instagram.com/gimnasiosvitalife/" target="_blank"><img
-                                src="../assets/icons/instagram.png" alt="Instagram"></a></li>
-                    <li> <a href="https://www.linkedin.com/in/fernando-rossetti-9679159b/" target="_blank"><img
-                                src="../assets/icons/linkedin.png" alt="Linkedin"></a></li>
-                </ul>
-            </div>
-            <div class="col bg-dark bg-gradient">
-                <h2>Derechos</h2>
-                <ul>
-                    <li><img src="../assets/icons/copyright.png" target="_blank"></li>
-                    <li>Fernando Rossetti</li>
-                    <li>Copyright 2022</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <!-- Finaliza Footer -->
+        <!-- Inicio del Footer -->
+        <footer
+            class=" bg-dark $white d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-muted">© 2022 Company, Fernando Rossetti</p>
+            <a
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <img src="../assets/icons/gym.png" alt="">
+            </a>
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="terminos.html" class="nav-link px-2 text-muted">Terminos y
+                        Condiciones</a></li>
+                <li class="nav-item"><a href="privacidad.html" class="nav-link px-2 text-muted">Politicas de
+                        Prívacidad</a></li>
+            </ul>
+            <ul class="nav col-md-12 justify-content-end">
+                <li class="ms-3"><a class="link-dark" href="https://www.facebook.com/Vitalife-Gym-114486399339287"><img
+                            src="../assets/icons/facebook.png" alt="Facebook"></a></li>
+                <li class="ms-3"><a class="link-dark" href="https://www.instagram.com/gimnasiosvitalife/"><img
+                            src="../assets/icons/instagam.png" alt="Instagram"></a></li>
+                <li class="ms-3"><a class="link-dark"
+                        href="https://www.youtube.com/channel/UCGCmBpRAR7rTzdjeiCefdbA"><img
+                            src="../assets/icons/youtube.png" alt="YouTube"></a></li>
+            </ul>
+        </footer>
+        <!-- Finaliza Footer -->
 </body>
 
 </html>

@@ -19,84 +19,72 @@
 
     <!-- Estilos -->
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Proyecto Final</title>
+    <title>Ubicación</title>
 </head>
 
-<body class="contenido">
-    <!-- Lista no Ordenada -->
-    <header class="sticky-top">
-        <nav>
-            <h1><img src="../assets/icons/gym2.png">Gym Vitalife</h1>
-            <ul class="nav-pills nav">
-                <li class="nav-item">
-                    <a class="nav-link active-in" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active-in" href="servicio.html">Servicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active-in" href="aticulos.html">Artículos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active-in" href="ubicacion.html">Ubicación</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active-in" href="contacto.html">Contacto</a>
-                </li>
+<body>
+    <div class="contenido">
+        <!-- Lista no Ordenada -->
+        <header class="bg-dark sticky-top">
+            <nav>
+                <h1><img src="../assets/icons/gym2.png">Gym Vitalife</h1>
+                <ul class="nav-pills nav">
+                    <li class="nav-item">
+                        <a class="nav-link active-in" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active-in" href="servicio.html">Servicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active-in" href="articulos.html">Artículos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active-in" href="ubicacion.html">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active-in" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Finaliza lista -->
+
+        <!-- Inicio Contenido-->
+        <main class="contenido-main">
+            <section class="encabezado">
+                <h2>Nuestra Ubicación</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3377.1141233478174!2d-64.1110285851337!3d-32.1741971405321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cd6f2450fe5921%3A0xc3c2507b58a91f02!2sVitalife%20Sport!5e0!3m2!1ses!2sar!4v1656378417367!5m2!1ses!2sar"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </main>
+        <!-- Finaliza Contenido-->
+
+        <!-- Inicio del Footer -->
+        <footer
+            class=" bg-dark $white d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-muted">© 2022 Company, Fernando Rossetti</p>
+            <a
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <img src="../assets/icons/gym.png" alt="">
+            </a>
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="terminos.html" class="nav-link px-2 text-muted">Terminos y
+                        Condiciones</a></li>
+                <li class="nav-item"><a href="privacidad.html" class="nav-link px-2 text-muted">Politicas de
+                        Prívacidad</a></li>
             </ul>
-        </nav>
-    </header>
-    <!-- Finaliza lista -->
-
-    <!-- Inicio Contenido-->
-    <main class="contenido-main">
-        <section class="encabezado">
-            <h2>Nuestra Ubicación</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3377.1141233478174!2d-64.1110285851337!3d-32.1741971405321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cd6f2450fe5921%3A0xc3c2507b58a91f02!2sVitalife%20Sport!5e0!3m2!1ses!2sar!4v1656378417367!5m2!1ses!2sar"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-    </main>
-    <!-- Finaliza Contenido-->
-
-    <!-- Inicio del Footer -->
-    <footer class="contenido-footer text-center bg-secondary">
-        <div class="row">
-            <div class="col bg-dark bg-gradient">
-                <h2>Contacto</h2>
-                <ul>
-                    <li><a href="mailto:fernando_r_4@hormail.com">fernando_r_4@hotmail.com</a> </li>
-                    <li>(+54) 3571-638017</li>
-                    <li>Rio Tercero-Cordoba-Argentina</li>
-                    <li><button onclick="location.href='contacto.html'">Contacto</button></li>
-                </ul>
-            </div>
-            <div class="col bg-dark bg-gradient">
-                <h2>Terminos</h2>
-                <p>Servicio fotografico con terminos y condiciones.</p>
-            </div>
-            <div class="col bg-dark bg-gradient">
-                <h2>Redes</h2>
-                <ul>
-                    <li><a href="https://www.facebook.com/Vitalife-Gym-114486399339287" target="_blank"><img
-                                src="../assets/icons/facebook.png" alt="Facebook"></a></li>
-                    <li><a href="https://www.instagram.com/gimnasiosvitalife/" target="_blank"><img
-                                src="../assets/icons/instagram.png" alt="Instagram"></a></li>
-                    <li> <a href="https://www.linkedin.com/in/fernando-rossetti-9679159b/" target="_blank"><img
-                                src="../assets/icons/linkedin.png" alt="Linkedin"></a></li>
-                </ul>
-            </div>
-            <div class="col bg-dark bg-gradient">
-                <h2>Derechos</h2>
-                <ul>
-                    <li><img src="../assets/icons/copyright.png" target="_blank"></li>
-                    <li>Fernando Rossetti</li>
-                    <li>Copyright 2022</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <!-- Finaliza Footer -->
+            <ul class="nav col-md-12 justify-content-end">
+                <li class="ms-3"><a class="link-dark" href="https://www.facebook.com/Vitalife-Gym-114486399339287"><img
+                            src="../assets/icons/facebook.png" alt="Facebook"></a></li>
+                <li class="ms-3"><a class="link-dark" href="https://www.instagram.com/gimnasiosvitalife/"><img
+                            src="../assets/icons/instagam.png" alt="Instagram"></a></li>
+                <li class="ms-3"><a class="link-dark"
+                        href="https://www.youtube.com/channel/UCGCmBpRAR7rTzdjeiCefdbA"><img
+                            src="../assets/icons/youtube.png" alt="YouTube"></a></li>
+            </ul>
+        </footer>
+        <!-- Finaliza Footer -->
 </body>
 
 </html>
