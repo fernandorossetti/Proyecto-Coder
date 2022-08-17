@@ -114,17 +114,17 @@ header {
     flex-grow: 1;
     align-items: center; } }
 
-@media screen and (min-width: 995px) and (max-width: 950px) {
+@media screen and (max-width: 950px) {
   .articulos {
     grid-template-columns: repeat(2, 1fr); } }
 
-@media screen and (min-width: 995px) and (max-width: 675px) {
+@media screen and (max-width: 675px) {
   header nav {
     flex-direction: column;
     text-align: center;
     height: auto; } }
 
-@media screen and (min-width: 995px) and (max-width: 450px) {
+@media screen and (max-width: 450px) {
   #encabezadoArticulos {
     display: none; }
   #carouselExampleControls {
