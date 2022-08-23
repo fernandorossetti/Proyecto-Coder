@@ -26,14 +26,12 @@
 
 h2 {
 	font-size: 3rem;
-	line-height: 1;
 	font-family: 'Anton';
 	font-weight: 300;
-	padding: 10px;
 	text-decoration: solid;
 	text-align: center;
 	color: map-get($map:$colors, $key:"succes");
-	margin-bottom: 10px;
+	margin: 20px 0 20px 0;
 }
 
 
