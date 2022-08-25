@@ -22,5 +22,9 @@ header {
             margin: 10px;
         }
     }
+
+    .navbar-collapse{
+        flex-direction: row-reverse;
+    }
     
 }

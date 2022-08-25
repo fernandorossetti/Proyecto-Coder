@@ -44,6 +44,8 @@ header {
       font-weight: 700;
       font-size: 18px;
       margin: 10px; }
+  header .navbar-collapse {
+    flex-direction: row-reverse; }
 
 .contenido-main {
   color: white;
@@ -107,17 +109,22 @@ header {
   margin-right: 0 !important;
   margin-left: 0 !important; }
 
-@media screen and (min-width: 995px) {
-  .navbar-collapse {
-    flex-basis: 100%;
-    flex-grow: 1;
-    align-items: center; } }
+@media screen and (min-width: 740px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto; } }
+
+@media screen and (max-width: 992px) and (min-width: 740px) {
+  .navbar-nav {
+    flex-direction: initial; }
+  .navbar-toggler {
+    display: none; } }
 
 @media screen and (max-width: 950px) {
   .articulos {
     grid-template-columns: repeat(2, 1fr); } }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 740px) {
   header nav {
     flex-direction: column;
     text-align: center;
