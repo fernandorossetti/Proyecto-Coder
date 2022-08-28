@@ -4,3 +4,4 @@ Realizano nuevos cambios de estilos a todo el proyecto, empezando con el Index.h
 16/8 - Mas cambios al proyecto, modificando html de contacto y Header/Footer de todo el sitio.
 22/8 - Corrigiendo errores, agregando etiquetas, modificando estilos y probar el menu hamburguesa.
 24/8 - Agrengado etiquetas a todos los HMTL, siguiendo con el menu y cambio de estilo al nav.
+27/8 - Finalizando el estilo y agregando el menu hamburguesa en todo el sitio.

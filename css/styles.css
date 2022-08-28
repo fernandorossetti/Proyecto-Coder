@@ -1,22 +1,22 @@
-.contenido {
+body .contenido {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 300;
   font-size: 18px; }
 
-.active-in:hover {
+body .active-in:hover {
   background-color: #00f8b6 !important;
   color: #fff !important; }
 
-.nav-pills {
-  --bs-nav-pills-link-active-bg: map-get($map:$colors, $key:"succes") !important; }
+body .nav-pills {
+  --bs-nav-pills-link-active-bg: map-get($map: $colors, $key: "succes") !important; }
 
-.nav {
+body .nav {
   --bs-nav-link-padding-x: 0px !important;
   --bs-nav-link-padding-y: 0px !important;
-  --bs-nav-link-color: $white !important;
+  --bs-nav-link-color: $white  !important;
   color: white; }
 
-h2 {
+body h2 {
   font-size: 3rem;
   font-family: 'Anton';
   font-weight: 300;
